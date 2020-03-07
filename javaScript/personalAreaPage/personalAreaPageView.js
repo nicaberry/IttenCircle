@@ -7,7 +7,7 @@ class PersonalAreaPageView {
      this.ajaxStorageModel = ajaxStorageModel;
     this.nickname = null;
 
-    this.arrSrcAvatar = ['/image/avatars/avatar.svg', '/image/avatars/avatar_boy_1.svg', '/image/avatars/avatar_girl_1.svg', '/image/avatars/avatar_boy_2.svg', '/image/avatars/avatar_girl_2.svg', '/image/avatars/avatar_boy_3.svg',  '/image/avatars/avatar_girl_3.svg'];
+    this.arrSrcAvatar = ['image/avatars/avatar.svg', 'image/avatars/avatar_boy_1.svg', 'image/avatars/avatar_girl_1.svg', 'image/avatars/avatar_boy_2.svg', 'image/avatars/avatar_girl_2.svg', 'image/avatars/avatar_boy_3.svg', 'image/avatars/avatar_girl_3.svg'];
     this.numberAvatar = 0;
     this.imgForSlider = null;
   }
@@ -107,7 +107,7 @@ class PersonalAreaPageView {
     if (avatar) {
       return  "<img id='avatar' src=" + avatar + ">";
     } else {
-      return "<img id='avatar' src='/image/avatars/avatar.svg'>";
+      return "<img id='avatar' src='image/avatars/avatar.svg'>";
     }
   }
   //обработка кнопки выхода из личной страницы

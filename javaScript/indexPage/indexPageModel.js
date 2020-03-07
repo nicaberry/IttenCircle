@@ -1,7 +1,7 @@
 "use strict";
 class IndexPageModel {
   constructor() {
-    this.audioBtn = new Audio("/audioFiles/click.mp3");
+    this.audioBtn = new Audio("audioFiles/click.mp3");
     this.ajaxStorageModel = new AjaxStorageModel();
     this.localStorageModel = new LocalStorageModel();
     this.indexPageView = null;

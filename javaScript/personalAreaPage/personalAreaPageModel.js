@@ -25,7 +25,7 @@ class PersonalAreaPageModel {
   }
   //передача данных через ajaxStorageModel
   getData(name) {
-    let id = name || this.localStorageModel.getNickname() ||indexPageModel.getRegistrationPageModel().getNickname() || indexPageModel.getEntryPageModel().getNickname();
+    let id = name || this.localStorageModel.getNickname() || indexPageModel.getRegistrationPageModel().getNickname() || indexPageModel.getEntryPageModel().getNickname();
     this.ajaxStorageModel.getData(id, this);
   }
   //установка data в localStorageModel
