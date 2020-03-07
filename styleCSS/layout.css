@@ -1,0 +1,77 @@
+/* стили для перекрывающего окна */
+#layout {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 30%;
+  display: none;
+}
+/* стили для контайнера в котором находится информация и кнопка закрытия */
+#layoutContainer {
+  display: none;
+  z-index: 1;
+}
+#layoutInfo {
+  opacity: 1;
+  position: fixed;
+  width: 300px;
+  z-index: 7;
+  top: 20%;
+  left: 45%;
+}
+#layoutInfo p {
+ color: beige;
+ font-size: 48px;
+ text-align: left;
+}
+/* стили для кнопки закрытия перекрытия */
+.closeLayout {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 32px;
+  border: 2px solid beige;
+  border-radius: 50%;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  z-index: 7;
+  color: beige;
+}
+/* стили для слайдера */
+.containerForSlider {
+  width: 300px;
+  z-index: 1;
+  position: fixed;
+  top: 20%;
+  left: calc(50% - 150px);
+}
+.containerForSlider input[type="button"] {
+   width: 150px;
+ }
+
+@media (min-width: 300px) and (max-width: 900px) {
+ .containerForSlider {
+   width: 200px;
+   left: calc(50% - 100px);
+ }
+ }
+ .containerForSlider input[type="button"] {
+   width: 100px;
+ }
+@media (min-width: 300px) and (max-width: 500px) {
+  #layoutInfo {
+    left: 20%;
+  }
+ }
+ @media (min-width: 500px) and (max-width: 900px) {
+  #layoutInfo {
+    left: 35%;
+  }
+ }

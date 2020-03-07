@@ -1,0 +1,24 @@
+/* контайнер для игры */
+#containerForGame {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* кнопка старта */
+.buttonStart {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+/* для выведения словленных шариков */
+.count {
+  font-size: 36px;
+}
+/* для скрытия шариков */
+.opacityBall {
+  opacity: 0;
+}
+/* для кнопок управления ловцом */
+.buttonRight,
+.buttonLeft {
+  width: 140px;
+}

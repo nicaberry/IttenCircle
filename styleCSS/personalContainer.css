@@ -1,0 +1,44 @@
+/* стили для личного кабинета */
+#personalContainer {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+}
+/* avatar */
+#avatar {
+  width: 200px;
+  border: 4px solid rgb(41, 40, 40);
+  cursor: pointer;
+}
+#changeAvatarBtn {
+  display: block;
+  opacity: 0;
+  margin: 0 auto;
+  transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+/* стили для имени */
+#personalNickname p {
+  margin-top: 0px;
+  font-size: 24px;
+}
+/* стили для окна с информацией о круге иттена */
+#containerInfoAboutCircleItten {
+  border: 4px solid red;
+  background-color: beige;
+  text-align: center;
+  width: 200px;
+  display: none;
+  padding: 15px;
+  margin: 0 auto;
+  vertical-align: top;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 300px) and (max-width: 1500px) {
+  #personalContainer {
+    width: 100%;
+  }
+}

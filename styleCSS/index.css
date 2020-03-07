@@ -1,0 +1,84 @@
+/* общие стили */
+html {
+  min-width: 300px;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', 'M PLUS Rounded 1c', sans-serif; 
+  word-wrap: break-word;
+  background-color: beige;
+  min-width: 300px;
+  user-select: none;
+}
+/* стили для хэдера */
+#header {
+  width: 100%;
+  height: 12.5%;
+  background-color: rgb(43, 43, 42);
+  margin-bottom: 20px;
+}
+#containerForPage {
+ width: 100%;
+ margin: 0 auto;
+}
+/* стили для лого */
+#logo {
+  display: inline-block;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-left: 5vw;
+  color: beige;
+}
+/* стили для меню */
+#menu,
+#menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+#menu {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-right: 5vw;
+}
+#menu > li {
+   display: inline-block;
+   position: relative;
+}
+#menu ul {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+}
+/* стили для кнопки выхода */
+#exit {
+  display: none;
+}
+/* стили для контайнера настроек */
+#containerSettings {
+  display: none;
+  width: 150px;
+  background: beige;
+  border: 1px solid black;
+}
+/* стили для всех кнопок */
+input[type="button"] {
+  cursor: pointer;
+}
+/* стили для названия проекта */
+#containerForPage h1 {
+  text-align: center;
+  font-size: 48px;
+}
+/* стили для всех абзацев */
+p {
+  text-align: center
+}
+@media (min-width: 300px) and (max-width: 900px) {
+  #containerForPage h1 {
+    font-size: 24px;
+  }
+}

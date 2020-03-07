@@ -1,0 +1,32 @@
+/* стиль сообщающий об ошибке при вводе данных в форме */
+.err {
+  border: 2px solid red;
+}
+/* стиль для формы */
+#containerForm {
+  width: 10%;
+  margin: 0 auto;
+}
+#containerErrEntryName,
+#containerErrEntryPassword,
+#containerErrRegistrationRepeatPassword,
+#containerErrRegistrationPassword,
+#containerErrRegistrationName {
+  /* display: none; */
+  color: darkgrey;
+  font-size: 12px;
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+
+
+@media (min-width: 300px) and (max-width: 750px) {
+  #containerForm {
+    width: 40%;
+  }
+}
+@media (min-width: 750px) and (max-width: 1000px) {
+  #containerForm {
+    width: 30%;
+  }
+}

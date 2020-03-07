@@ -1,0 +1,46 @@
+/* СТИЛИ ДЛЯ ЯЧЕЕК КРУГА ИТТЕНА*/
+/* выделение цветовой ячейки */
+.cellBorder {
+  stroke-width: 3;
+  stroke: rgb(4, 5, 17);
+}
+/* добавляет прозрачность ячейкам круга Иттена */
+.classOpacity {
+  fill-opacity: 0.1;
+}
+
+/* СТИЛИ ДЛЯ КНОПОК ЦВЕТОВЫХ ГАРМОНИЙ */
+/* убераем встроенные стили в списке */
+#ulContainerColorsHarmony,
+#ulContainerColorsHarmony ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+/* стили для кнопок выбора цветовых гармоний */
+#ulContainerColorsHarmony > li {
+   display: block;
+   position: relative;
+   text-align: center;
+}
+#ulContainerColorsHarmony > li > input {
+  width: 200px;
+}
+/* стили для кнопок выбора определенных цветовых гармоний */
+#ulContainerColorsHarmony ul {
+  position: relative;
+  top: 100%;
+  left: 0%;
+}
+
+#ulContainerColorsHarmony ul  div  input {
+  width: 200px;
+  border: none;
+}
+/* стиль для закрытия кнопок с цветовыми гармониями */
+.closeElem {
+  height: 0;
+  opacity: 0;
+}
+
+
